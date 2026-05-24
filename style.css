@@ -1,0 +1,31 @@
+/* Base container */
+body {
+    background-color: rgb(47, 47, 47);
+    color: whitesmoke;
+}
+
+/* Classes */
+.orbitron-font {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.lilita-one-font {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spacer {
+    height: 100vh;
+}
+
+.hidden-text {
+    color: rgb(47, 47, 47);
+}
+
+
+/* Elements */

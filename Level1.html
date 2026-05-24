@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Look down</title>
+
+    <!-- Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Lilita One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1 class="lilita-one-font">Level 1</h1>
+    <button id="HintButton1" onclick="showHint(1)">Hint</button>
+
+    <hint id="Hint1" class="orbitron-font" style="display: none;">
+        <p><!--Hex--> 55 52 4c</p>
+        <button id="HintButton2" onclick="showHint(2)">Hint 2</button>
+    </hint>
+
+    <hint id="Hint2" class="orbitron-font" style="display: none;">
+        <p>Inspect <!--Hint1--></p>
+    </hint>
+
+    <hr>
+    <!-- definitely not here -->
+
+    <div class="spacer"></div>
+
+    <!-- Bacon Cipher -->
+    <p class="hidden-text">$££$£ ££$$$ £$£££ $£££$ £$£££ $£££$ $££$$ $£££$ ££$££ £$£$£ ££$££ $£££$ $£££$</p>
+    <div class="spacer"></div>
+    <p class="hidden-text">1:£ 2:$</p>
+
+    <div class="spacer"></div><div class="spacer"></div>
+    <p class="hidden-text">Not that far down...</p>
+
+    <script src="../hint.js"></script>
+</body>
+</html>
