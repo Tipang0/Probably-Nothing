@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Are ya readin' this?</title>
+
+    <!-- Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Lilita One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Cascadia Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Level 3</h1>
+
+    <!-- Hints -->
+     <button id="HintButton1" onclick="showHint(1)">Hint</button>
+
+     <hint id="Hint1" style="display: none;">
+         <paragraph>Hint1</paragraph>
+         <button id="HintButton2" onclick="showHint(2)">Hint 2</button>
+     </hint>
+
+     <hint id="Hint2" style="display: none;">
+         <paragraph>Hint2</paragraph>
+     </hint>
+     
+     <script src="../JavaScript/hint.js"></script>
+    <hr>
+
+    <!-- Next PIN -->
+     <img src="./Level3.assets/just_an_image.png"
+        alt="Did ya know that sharks kill less people than pigs? 59382 people probably know that already.">
+
+
+    <!-- PIN verification -->
+     <script src="../JavaScript/pin.js"></script>
+     <script>
+        verifyPIN("b51546d88e3e040afb299212698b36ba36e53efb0051b0eb818c53f0ca7d227b",
+            prompt("Please enter the level PIN code :", "xxxxx"),
+            2
+        )
+     </script>
+</body>
+
+</html>

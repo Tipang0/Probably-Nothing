@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placeholder</title>
+
+    <!-- Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Lilita One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Cascadia Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Level 2</h1>
+
+    <!-- Hints -->
+     <button id="HintButton1" onclick="showHint(1)">Hint</button>
+
+     <hint id="Hint1" style="display: none;">
+         <paragraph>What a nice picture!</paragraph>
+         <button id="HintButton2" onclick="showHint(2)">Hint 2</button>
+     </hint>
+
+     <hint id="Hint2" style="display: none;">
+         <paragraph>Maybe you should take a closer look...</paragraph>
+     </hint>
+     
+     <script src="../JavaScript/hint.js"></script>
+    <hr>
+
+    <!-- Next PIN -->
+     <img src="./Level2.assets/totally_the_next_pin.png">
+
+
+    <!-- PIN verification -->
+     <script src="../JavaScript/pin.js"></script>
+     <script>
+        verifyPIN("39423beb323722c5f1cc9747b4b5b081da3ba21dbd7ad15d6d425d0752397eee",
+            prompt("Please enter the level PIN code :", "xxxxx"),
+            1
+        )
+     </script>
+</body>
+
+</html>

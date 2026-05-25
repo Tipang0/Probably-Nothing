@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Look down</title>
+    <title>Can you hear it?</title>
 
     <!-- Orbitron -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,41 +22,58 @@
 </head>
 
 <body>
-    <h1 title="Btw, next level code is 48642">Level 1</h1>
-    
+    <h1>Level 4</h1>
+
     <!-- Hints -->
     <button id="HintButton1" onclick="showHint(1)">Hint</button>
 
     <hint id="Hint1" style="display: none;">
-        <paragraph><!--Hex--> 55 52 4c</paragraph>
+        <paragraph>Try to listening... to Nothing. Just listen to Nothing.</paragraph>
         <button id="HintButton2" onclick="showHint(2)">Hint 2</button>
     </hint>
 
     <hint id="Hint2" style="display: none;">
-        <paragraph>Inspect <!--Hint1--></paragraph>
+        <paragraph>How long will it be so silent? -> silence.mp3 = 3:05</paragraph>
+        <button id="HintButton3" onclick="showHint(2)">Hint 3</button>
     </hint>
 
-    <hr>
-    <!-- definitely not here -->
-
-    <div class="spacer"></div>
-
-    <!-- Bacon Cipher -->
-    <p class="hidden-text">$££$£ ££$$$ £$£££ $£££$ £$£££ $£££$ $££$$ $£££$ ££$££ £$£$£ ££$££ $£££$ $£££$</p>
-    <div class="spacer"></div>
-    <p class="hidden-text">1:£ 2:$</p>
-
-    <div class="spacer"></div><div class="spacer"></div>
-    <p class="hidden-text">Not that far down...</p>
+    <hint id="Hint3" style="display: none;">
+        <paragraph>Wich level is it? Oh, yeah, the fourth, right.</paragraph>
+    </hint>
 
     <script src="../JavaScript/hint.js"></script>
 
+    <hr>
+
+    <p>
+        This level feels strangely empty...<br>
+        Maybe that's because you're not listening carefully enough.
+    </p>
+
+    <!-- definitely no audio here -->
+
+    <button onclick="playNothing()">Play absolutely nothing</button>
+
+    <script>
+        function playNothing() {
+            document.getElementById("totally_not_suspicious_audio").play();
+        }
+    </script>
+
+
+    <audio
+        id="totally_not_suspicious_audio"
+        src="./Level4.assets/silence.mp3">
+    </audio>
+
     <!-- PIN verification -->
-     <script src="../JavaScript/pin.js"></script>
-     <script>
-        verifyPIN("a24394211f28b1f31d0d9f273c112d37172284619d35e27ea298fae46c157c98",
-            prompt("Please enter the level PIN code :", "xxxxx")
+    <script src="../JavaScript/pin.js"></script>
+    <script>
+        verifyPIN(
+            "f61b69167a91fa99a8722473e51b32ee1477775c970c441ad32ccda8b010e97e",
+            prompt("Please enter the level PIN code :", "xxxxx"),
+            3
         )
-     </script>
+    </script>
 </body>
 </html>
